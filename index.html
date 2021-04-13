@@ -1,0 +1,196 @@
+<!-- Facebook login page design -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- this div below is the whole screen part -->
+    <div class="container">
+      <!-- header part -->
+      <div class="header">
+        <!-- this division contain the facebook logo -->
+        <div class="logo">
+          <a class="logo-text" href="index.html">facebook</a>
+        </div>
+        <!-- this division contains login section in the header -->
+        <div class="login">
+          <form action="">
+            <table class="login-controls">
+              <tr>
+                <td><label class="login-label">Email or Mobile</label></td>
+                <td><label class="login-label">Password</label></td>
+              </tr>
+              <tr>
+                <td><input class="id" type="text" /></td>
+                <td><input class="pswd" type="password" /></td>
+                <td>
+                  <input class="submit-btn" type="submit" value="Login" />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="forgotton" href="forgotton.html"
+                    >Forgotten account?</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+
+      <!-- this div below contains the body part of the fb login page -->
+      <div class="main-body">
+        <!-- this div below contains the text and image in the left section -->
+        <div class="left-section">
+          <p class="para">
+            Facebook helps you connect and share with the <br />
+            people in your life.
+          </p>
+          <img class="image" src="/image/fb.png" alt="image not available" />
+        </div>
+        <!-- this div below contains the sign up form in the right section -->
+        <div class="right-section">
+          <label class="form-title">Create an account</label>
+          <p class="form-subtitle">It's free and always will be.</p>
+
+          <!-- form for sign up -->
+          <form class="signup-form" action="signup.html" id="signup-form">
+            <!-- firstname text field -->
+            <input
+              name="fname"
+              class="fname"
+              type="text"
+              placeholder="First Name"
+            />
+            <!-- surname text field -->
+            <input
+              name="sname"
+              class="sname"
+              type="text"
+              placeholder="Surname"
+            /><br /><br />
+            <!-- mobile number or email id input field -->
+            <input
+            name="emailAddress"
+              class="mobile"
+              type="email"
+              placeholder="Mobile number or email address"
+            /><br /><br />
+            <!-- password input field -->
+            <input
+            name="password"
+              class="mobile"
+              type="password"
+              placeholder="New password"
+            /><br /><br />
+            <label class="bday">Birthday</label><br /><br />
+            <!-- birth date selector -->
+            <select name="day">
+              <option value="">Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <!-- birth month selector -->
+            <select name="month">
+              <option value="">Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+            <!-- birth year selector -->
+            <select name="year">
+              <option value="">Year</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+            <!-- Why do i need to provide my date of birth? -->
+            <label class="why-dob"
+              >Why do i need to provide my date of birth?</label
+            ><br /><br />
+            <!-- Gender radio buttons -->
+            <!-- Female -->
+            <input type="radio" name="gender" />Female 
+            <!-- male -->
+            <input type="radio" name="gender"/>Male <br />
+            <!-- Terms and conditions -->
+            <p class="terms">
+              By clicking Sign Up, you agree to our <a href="">Terms</a> Learn
+              how we <br />collect, use and share your data in our
+              <a href="">Data Policy</a> and how <br />we use cookiesand similar
+              technology in our <a href="">Cookie Policy</a>.<br />You may
+              receive SMS notification from us and can opt out<br />at any time.
+            </p>
+            <!-- Submit button -->
+            <input class="signup-btn" type="submit" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <!-- js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
