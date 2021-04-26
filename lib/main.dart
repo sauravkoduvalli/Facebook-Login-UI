@@ -23,7 +23,7 @@ class SplashScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 5,
+      seconds: 10,
       navigateAfterSeconds: new MyHomePage(),
       backgroundColor: Colors.white,
       // title: new Text('Flutter Javatpoint',textScaleFactor: 2,),
